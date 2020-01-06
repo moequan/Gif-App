@@ -1,5 +1,11 @@
 ## GIFS GIGS GILS
 
+
+!!react Error: ENOSPC: System limit for number of file watchers reached
+Solution: Increase the number of watcher: 
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p ( in Terminal)
+
+
 ![](https://media.giphy.com/media/JUYkZ9p2qW9g5Z0e6P/giphy.gif)
 
 The purpose of this exercise is to refresh concepts we introduced last year.  
